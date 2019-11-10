@@ -1,0 +1,144 @@
+<!-- 
+    Układ 16:9
+    Ma być podobny (nie pixel w pixel)
+    Ma być responsywny (dostosowoywać się do wysokości przeglądarki)
+
+    ZŁOTE ZASADY
+    - Zrób tak jak potrafisz i tyle ile potrafisz
+    - Próbuj/testuj/sprawdzaj co by było. Takie próbowanie to najważniejsze cechy programisty
+    - Nie przeskakuj ćwiczenia. 
+ -->
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>A dream about old Japan</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .picture {
+            position: relative;
+            width: 80vh;
+            height: 45vh;
+            margin: 50px auto 50px auto;
+            overflow: hidden;
+            background-color: lightblue;
+        }
+
+        img {
+            position: absolute;
+            display: none;
+        }
+
+        .pic_1 {
+            display: block;
+            width: 100%;
+            left: 0;
+            bottom: -15%;
+            z-index: 0;
+        }
+
+        .pic_2 {
+            display: block;
+            width: 100%;
+            left: 0;
+            bottom: -30%;
+            z-index: 1;
+        }
+
+        .pic_3 {
+            display: block;
+            width: 100%;
+            left: 0;
+            bottom: -42%;
+            z-index: 2;
+        }
+
+        .pic_4 {
+            display: block;
+            width: 100%;
+            left: 0;
+            bottom: -37%;
+            z-index: 3;
+        }
+
+        .pic_5 {
+            display: block;
+            width: 100%;
+            left: 0;
+            bottom: -47%;
+            z-index: 4;
+        }
+
+        .pic_6 {
+            display: block;
+            width: 100%;
+            left: 0;
+            bottom: -72%;
+            z-index: 5;
+        }
+
+        .pic_7 {
+            display: block;
+            width: 7%;
+            left: 10%;
+            top: 11%;
+            z-index: 5;
+        }
+        .pic_8 {
+            display: block;
+            width: 28%;
+            left: -3%;
+            top: 17%;
+            z-index: 5;
+        }
+        .pic_9 {
+            display: block;
+            width: 44%;
+            right: -3%;
+            top: 17%;
+            z-index: 5;
+        }
+        .pic_10 {
+            display: block;
+            width: 44%;
+            right: 0;
+            top:4%;
+            z-index: 6;
+        }
+        .pic_11 {
+            display: block;
+            width: 8%;
+            left: 4%;
+            bottom:10%;
+            z-index: 6;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="picture">
+        <!-- img[src=img/japan$.png]*11 -->
+        <img class="pic_1" src="img/japan1.png" alt="">
+        <img class="pic_2" src="img/japan2.png" alt="">
+        <img class="pic_3" src="img/japan3.png" alt="">
+        <img class="pic_4" src="img/japan4.png" alt="">
+        <img class="pic_5" src="img/japan5.png" alt="">
+        <img class="pic_6" src="img/japan6.png" alt="">
+        <img class="pic_7" src="img/japan7.png" alt="">
+        <img class="pic_8" src="img/japan8.png" alt="">
+        <img class="pic_9" src="img/japan9.png" alt="">
+        <img class="pic_10" src="img/japan10.png" alt="">
+        <img class="pic_11" src="img/japan11.png" alt="">
+
+    </div>
+</body>
+
+</html>

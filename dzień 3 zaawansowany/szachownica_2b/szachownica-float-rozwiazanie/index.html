@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Szachownica - Float</title>
+    <style>
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .board {
+            /* box-sizing: border-box; */
+            width: 30vw;
+            border: 10px solid black;
+            margin: 50px auto;
+            /* overflow: hidden; */
+            /* height: 30vw; */
+        }
+
+        span {
+            float: left;
+            width: 50%;
+            height: 15vw;
+            /* height: calc(15vw - 10px); */
+        }
+
+        span:nth-child(1),
+        span:nth-child(4) {
+            background-color: #f00;
+        }
+
+        h1 {
+            margin-top: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="board clearfix">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <!-- Pseudolement ::after -->
+    </div>
+    <h1>szachownica "float"</h1>
+</body>
+
+</html>
