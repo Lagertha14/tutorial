@@ -9,22 +9,66 @@
     display: block;
     clear: both;
 }
-
-.desktop {
-    display: block;
+.wrap{
     max-width: 1280px;
 }
+.desktop {
+    display: block;
+    float: left;
+    width: 250px;
+}
+nav.desktop ul{
+    list-style: none;
 
+} 
+nav.desktop a{
+    font-family: arial;
+    display: inline-block;
+    font-size:22px;
+    text-decoration: none;
+    line-height: 110px;
+    padding-left:20px;
+    color: rgb(70, 57, 49);
+    text-transform: uppercase;
+
+    
+}
+nav.desktop i{
+    padding-right: 30px;
+    border-right: 2px solid rgb(70, 57, 49);
+    margin-right: 30px;
+    transition: 0.3s;
+}
+nav.desktop a:hover{
+    font-weight: 600;
+
+}
+nav.desktop li:hover i{
+    margin-right:20px;
+    padding-right:20px;
+
+}
 .mobile {
     display: none;
 }
 
 header {
+    float: left;
     background-image: url("https://cdn.pixabay.com/photo/2016/06/25/16/23/crocheting-1479217_960_720.jpg");
     float: left;
-    width: calc(100% - 300px);
-    height: 450px;
+    width: calc(100% - 250px);
+    height: 440px;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom;
     background-size: cover;
+}
+section h1{
+    font-family: 'Sacramento', cursive;
+    font-size:100px;
+    letter-spacing: 4px;
+    text-align:center;
+    padding: 15px 0;
+    margin-top:15px;
+    background-color: rgba(70, 57, 49, 0.8);
+    color: whitesmoke;
 }
