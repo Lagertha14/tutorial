@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        button {
+            font-size: 40px;
+        }
+
+        h1 {
+            box-sizing: border-box;
+            position: absolute;
+            font-family: arial;
+            font-size: 80px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            transition: 1s;
+            border: 0 solid black;
+        }
+
+        /* .larger:hover ~ h1 {
+            font-size: 160px;
+        } */
+        h1.duzy {
+            font-size: 160px;
+        }
+
+        /* .smaller:hover ~ h1 {
+            font-size: 40px;
+        }
+        
+        .border:hover ~ h1 {
+            border: 40px solid black; 
+        } */
+        h1.maly {
+            font-size: 40px;
+        }
+
+        h1.ramka {
+            border: 40px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <button class="larger">2xWiększy</button>
+    <button class="smaller">2xMniejszy</button>
+    <button class="border">Obramowanie</button>
+    <h1>Nazwa</h1>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script>
+        $('.larger').click(function () {
+            $("h1").toggleClass("duzy");
+        });
+        $(".smaller").click(function () {
+            $("h1").toggleClass("maly");
+        });
+        $(".border").click(function () {
+            $("h1").toggleClass("ramka")
+        });
+    </script>
+</body>
+
+</html>
