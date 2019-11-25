@@ -21,33 +21,56 @@
         
         body {
             display: flex;
-            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
         
         .panel {
+            height: 85vh;
             display: flex;
-            max-width: 500px;
+            min-width: 500px;
             width: 60vw;
-            background-color: rgb(100, 56, 56);
+            background-color:white;
             flex-wrap: wrap;
-            flex-shrink: 1;
-            align-items: center;
+            justify-content: space-between;
         }
         
-        .result {
+        .panel .result {
             display: flex;
-            flex-basis: 15vh;
-            flex-grow: 1;
-            width: 100%;
-            background-color: #333;
-            flex-wrap: wrap;
+            justify-content: flex-end;
+            flex-basis: 100%;
+            padding-right: 30px;
+            background-color: #000;
+            color: white;
+            font-family:arial;
+            font-size:60px;
+            
+
         }
         
         .panel div {
             display: flex;
-            flex-grow: 1;
-            width: 25%;
+            /* flex-grow: 1; */
+            width:30%;
             height: 10vh;
+            background-color:cadetblue;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-family:arial;
+            font-size:60px;
+         
+        }
+        .panel div:hover {
+            background-color: #aaa;
+        }
+
+        .panel div:nth-child(17),
+        .panel div:nth-child(18)
+        {
+            width:44%;
+
         }
     </style>
 </head>
