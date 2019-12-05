@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+            <ul id="container"></ul>
+            <br/>
+            <h3 id="priceTotal">Razem: </p>
+            <h3 id="quantityTotal">Sztuk: </p>
+            <h3 id="mostExpensiveItem">Najdroższy artykuł: </p>
+    </div>
+
+    <div class="calculator" >
+        <div class="title">Kalkulator BMI</div>
+        <div class="container">
+            <div class="header">Płeć</div>
+            <div class="btns-flex">
+                <label><input type="radio" name="gender" value="male">Male</label>
+                <label><input type="radio" name="gender" value="female">Female</label>
+            </div>
+        </div>
+        <div class="container">
+            <div class="header">Waga (kg)</div>
+            <input id="weight" class="input-full" type="number" placeholder="Podaj wage">
+        </div>
+        <div class="container">
+            <div class="header">Wzrost (cm)</div>
+            <input id="height" class="input-full" type="number" placeholder="Podaj wzrost">
+        </div>
+        <button>Oblicz</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

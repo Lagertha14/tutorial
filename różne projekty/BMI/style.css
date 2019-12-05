@@ -1,0 +1,130 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.calculator {
+    display: flex;
+    height: 600px;
+    width: 500px;
+    background-color:rgba(0, 0, 0, 0.4);
+    padding: 20px ;
+    flex-direction: column;
+    color: white;
+
+    /* margin: 20px auto; */
+    /* background-image: url(https://cdn.pixabay.com/photo/2016/06/02/09/47/a-change-in-lifestyle-1430599_960_720.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5; */
+    
+    
+}
+
+div.calculator::after {
+    content: "";
+    /* height: 600px;
+    width: 500px; */
+    background: url(https://cdn.pixabay.com/photo/2016/06/02/09/47/a-change-in-lifestyle-1430599_960_720.jpg);
+    opacity: 0.4;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 1s;
+  }
+
+  div.calculator:hover::after  {
+filter: blur(20px);
+transition: all 1s;
+  }
+
+.calculator div {
+    width: 100%;
+
+}
+
+.title {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 42px;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+
+div.title~div {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+input{
+    font-size: 22px;
+    background-color:transparent;
+    border: none;
+    color: white;
+    border-bottom: 2px solid white;
+    padding: 15px 0;
+}
+::placeholder { 
+    color:white;
+    opacity: 0.4;
+ } 
+ .container{
+     padding: 20px 0;
+ }
+
+
+ .header{
+     margin-bottom: 10px;
+ }
+
+ .input-full{
+     width: 100%;
+ }
+ .btns-flex{
+     display: flex;
+ }
+
+ .btns-flex label {
+     flex-basis: 50%;
+     text-align: center;
+ }
+
+ label input {
+     margin-right: 15px;
+ }
+
+ button {
+     width: 40%;
+    line-height: 40px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    background-color: rgba(44, 64, 247, 1);
+    border: none;
+    margin: 20px auto;
+    border-radius: 20px;
+    box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
+ }
+
+ input:focus {outline:0;}
+
+ input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
