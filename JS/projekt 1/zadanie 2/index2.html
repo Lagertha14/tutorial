@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Generator haseł</title>
+</head>
+
+<body>
+    <input type="number">
+    <div class="button">Generuj!</div>
+    <div class="text"></div>
+
+
+
+    <script>
+        const btn = document.querySelector(".button");
+        const characters = "abcdefghijk";
+
+        const input = document.querySelector("input");
+
+
+        btn.addEventListener("click", function () {
+            let password = "";
+            
+            for (let i = 0; i < input.value; i++) {
+                let randomIndex = Math.floor(Math.random() * characters.length);
+                password = password + characters[randomIndex];
+            }
+
+
+            console.log(password);
+        })
+
+
+    </script>
+</body>
+
+</html>

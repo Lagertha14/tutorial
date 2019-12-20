@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .btn {
+            font-family: arial;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 18px;
+            margin: 12px auto;
+            width: 200px;
+            padding: 10px 20px;
+            text-align: center;
+            border: 2px solid orange;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            color: orange;
+            background-color: black;
+            border-color: black;
+            cursor: pointer;
+        }
+
+        .container {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .container div {
+            background-color: black;
+            height: 100px;
+            width: 100px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="btn">Zmień kolor!</div>
+    <div class="container">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <script>
+        const colors = ["royalblue", "violet", "pink", "yellow", "cadetblue"];
+        const btn = document.querySelector(".btn");
+        const boxes = document.querySelector(".container").querySelectorAll("div");
+        btn.addEventListener("click", function () {
+            for (let i = 0; i < boxes.length; i++) {
+                const randomIndex = Math.floor(Math.random() * colors.length);
+                // boxes[i].style.backgroundColor ="red";
+                boxes[i].style.backgroundColor = colors[randomIndex];
+                for (let j = 0; j < boxes.length; j++){
+                    if (j==i){}
+                    
+
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

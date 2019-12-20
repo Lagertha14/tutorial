@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>zadanie 2</title>
+</head>
+
+<body>
+    <button>Dodaj element listy.</button>
+    <ul></ul>
+    <script>
+        const btn = document.querySelector("button");
+        const container = document.querySelector("ul");
+        let counter = 1;
+
+        btn.addEventListener("click", function () {
+            const element = document.createElement("li");
+            element.innerHTML = counter;
+            if (counter%3==0){
+                element.style.fontSize="24px";
+            }
+            container.appendChild(element);
+            counter+=2;
+             
+        })
+
+
+    </script>
+</body>
+
+</html>
