@@ -31,8 +31,9 @@ function handSelection() {
 function aiChoice() {
     // const aiHand = hands[Math.floor(Math.random * 3)].dataset.option
     // return aiHand;
-    return hands[Math.floor(Math.random() * 3)].dataset.option;
+    return hands[Math.floor(Math.random() * hands.length)].dataset.option;
 }
+
 function checkResult(player, ai) {
     if (player === ai) {
         console.log('remis');
@@ -46,10 +47,8 @@ function checkResult(player, ai) {
 }
 // publikacja wyniku
 function publishResult(player, ai, result) {
-    document.querySelector('[data-summary="your-choice"]')
-        .textContent = player;
-    document.querySelector('[data-summary="ai-choice"]')
-        .textContent = ai;
+    document.querySelector('[data-summary="your-choice"]').textContent = player;
+    document.querySelector('[data-summary="ai-choice"]').textContent = ai;
 
     document.querySelector('p.numbers span').textContent =
         ++gameSummary.numbers;
@@ -81,11 +80,11 @@ function startGame() {
     if (!game.playerHand) {
         return alert('wybierz dłoń!');
     }
-    game.aiHand = aiChoice()
-    const gameResult = checkResult(game.playerHand, game.aiHand)
+    game.aiHand = aiChoice();
+    const gameResult = checkResult(game.playerHand, game.aiHand);
     console.log(gameResult);
     publishResult(game.playerHand, game.aiHand, gameResult);
-    endGame()
+    endGame();
 }
 
 hands.forEach(hand => hand.addEventListener("click", handSelection))
